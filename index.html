@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>感情記録日記</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1"></script>
+<link rel="stylesheet" href="css/stylesheet.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<p id="date-display">ここに日付が表示されます</p>
+
+<canvas id="myEmoChart" width="400" height="400"></canvas>
+<br>
+<div id="buttonAll">
+    <button id="button1">喜</button>
+    <button id="button2">怒</button>
+    <button id="button3">哀</button>
+    <button id="button4">楽</button>
+    <button id="button5">驚</button>
+    </div>
+
+    <div id="click-counts">
+        <span id="count1">0</span>
+        <span id="count2">0</span>
+        <span id="count3">0</span>
+        <span id="count4">0</span>
+        <span id="count5">0</span>
+        <p>Total　<span id="total-count">0</span></p>
+    </div>
+<footer>感情記録日記</footer>
+<script src="script.js"></script>
+</body>
+</html>
