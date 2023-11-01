@@ -129,6 +129,15 @@ function updateChartData(index) {
   totalCountElement.textContent = totalCount;
 }
 
+var lastTouchEnd = 0;
+document.addEventListener('touchend', function(event) {
+    var now = (new Date()).getTime();
+    if (now - lastTouchEnd <= 300) {
+        event.preventDefault();
+    }
+    lastTouchEnd = now;
+});
+
 var today = new Date();
 var year = today.getFullYear(); // 年
 var month = today.getMonth() + 1; // 月（0から11の値なので+1する）
