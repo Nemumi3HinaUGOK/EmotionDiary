@@ -4,7 +4,6 @@ font-size: 60px;
   }
 
   body {
-    touch-action: none;
       width: 1080px;
       height: 1920px;
       margin:0 auto;
