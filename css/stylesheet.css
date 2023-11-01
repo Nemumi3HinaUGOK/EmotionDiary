@@ -35,10 +35,3 @@ margin: auto;
 font-size: 20px;
 text-align: center;
   }
-
-  button:active{
-        border-style: none;
-        border-radius: 50%;
-        box-shadow: 0 0px 0px;
-        background-color:rgb(193, 182, 198);
-  }
