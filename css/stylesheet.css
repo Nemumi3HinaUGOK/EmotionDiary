@@ -1,4 +1,4 @@
-html{
+  html{
 font-family: 'DotGothic16', sans-serif;
 font-size: 60px;
   }
@@ -21,8 +21,8 @@ margin: auto;
   }
 
   button{
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border-style: none;
     border-radius: 50%;
     box-shadow: 0 5px 5px 0.5px;
@@ -39,3 +39,10 @@ margin: auto;
 font-size: 20px;
 text-align: center;
   }
+
+  /* button:active{
+        border-style: none;
+          border-radius: 50%;
+          box-shadow: 0 0px 0px;
+          background-color: rgb(193, 182, 198);
+  } */
