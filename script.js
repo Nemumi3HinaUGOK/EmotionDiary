@@ -28,7 +28,7 @@ var myEmoChart = new Chart(ctx, {
   type: "doughnut",
   data: chartData,
   options: {
-    responsive: false,
+    responsive: true,
   },
 });
 
@@ -41,26 +41,77 @@ var button5 = document.getElementById("button5");
 
 var totalCountElement = document.getElementById("total-count");
 
-// ボタンクリック時の処理
-button1.addEventListener("click", function () {
+
+// ボタンタップ時の処理
+button1.addEventListener("touchstart", function () {
+  button1.style.borderRadius = "50%";
+  button1.style.boxShadow = "0 0px 0px";
+  button1.style.backgroundColor = "rgb(193, 182, 198)";
   updateChartData(0);
 });
 
-button2.addEventListener("click", function () {
+button2.addEventListener("touchstart", function () {
+  button2.style.borderRadius = "50%";
+  button2.style.boxShadow = "0 0px 0px";
+  button2.style.backgroundColor = "rgb(193, 182, 198)";
   updateChartData(1);
 });
 
-button3.addEventListener("click", function () {
+button3.addEventListener("touchstart", function () {
+  button3.style.borderRadius = "50%";
+  button3.style.boxShadow = "0 0px 0px";
+  button3.style.backgroundColor = "rgb(193, 182, 198)";
   updateChartData(2);
 });
 
-button4.addEventListener("click", function () {
+button4.addEventListener("touchstart", function () {
+  button4.style.borderRadius = "50%";
+  button4.style.boxShadow = "0 0px 0px";
+  button4.style.backgroundColor = "rgb(193, 182, 198)";
   updateChartData(3);
 });
 
-button5.addEventListener("click", function () {
+button5.addEventListener("touchstart", function () {
+  button5.style.borderRadius = "50%";
+  button5.style.boxShadow = "0 0px 0px";
+  button5.style.backgroundColor = "rgb(193, 182, 198)";
   updateChartData(4);
 });
+
+//ボタンタップ後の処理
+button1.addEventListener("touchend", function () {
+  button1.style.borderRadius = "";
+  button1.style.boxShadow = "";
+  button1.style.backgroundColor = "";
+});
+
+button2.addEventListener("touchend", function () {
+  button2.style.borderRadius = "";
+  button2.style.boxShadow = "";
+  button2.style.backgroundColor = "";
+});
+
+button3.addEventListener("touchend", function () {
+  button3.style.borderRadius = "";
+  button3.style.boxShadow = "";
+  button3.style.backgroundColor = "";
+});
+
+button4.addEventListener("touchend", function () {
+  button4.style.borderRadius = "";
+  button4.style.boxShadow = "";
+  button4.style.backgroundColor = "";
+});
+
+button5.addEventListener("touchend", function () {
+  button5.style.borderRadius = "";
+  button5.style.boxShadow = "";
+  button5.style.backgroundColor = "";
+});
+
+
+
+
 
 // チャートデータを更新する関数
 function updateChartData(index) {
