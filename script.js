@@ -133,8 +133,6 @@ button6.addEventListener("touchend", function () {
 
 
 
-
-
 // チャートデータを更新する関数
 function updateChartData(index) {
   // 選択したボタンに対応するデータを1ずつ加算
