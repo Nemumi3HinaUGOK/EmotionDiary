@@ -1,16 +1,23 @@
 'use strict';
 
 var chartData = {
-  labels: ["喜", "怒", "哀", "楽", "驚"],
+  labels: ["喜", "怒", "悲", "驚", "嫌", "恐"],
   datasets: [
     {
-      data: [0, 0, 0, 0, 0], // 各項目の初期値
-      backgroundColor: ["#ff7fff", "#ff7f7f", "#7f7fff", "#ffff7f", "#ffbf7f"],
+      data: [0, 0, 0, 0, 0, 0], // 各項目の初期値
+      backgroundColor: [
+        "#ffb2ff",
+        "#ffb2b2",
+        "#b2b2ff",
+        "#ffd8b2",
+        "#a3d6cc",
+        "#d8b2ff",
+      ],
     },
   ],
 };
 
-var clickCounts = [0, 0, 0, 0, 0];
+var clickCounts = [0, 0, 0, 0, 0, 0];
 
 var clickCountElements = [
   document.getElementById("count1"),
@@ -18,6 +25,7 @@ var clickCountElements = [
   document.getElementById("count3"),
   document.getElementById("count4"),
   document.getElementById("count5"),
+  document.getElementById("count6"),
 ];
 
 // チャートを表示する要素を取得
@@ -38,6 +46,7 @@ var button2 = document.getElementById("button2");
 var button3 = document.getElementById("button3");
 var button4 = document.getElementById("button4");
 var button5 = document.getElementById("button5");
+var button6 = document.getElementById("button6");
 
 var totalCountElement = document.getElementById("total-count");
 
@@ -78,6 +87,13 @@ button5.addEventListener("touchstart", function () {
   updateChartData(4);
 });
 
+button6.addEventListener("touchstart", function () {
+  button6.style.borderRadius = "50%";
+  button6.style.boxShadow = "0 0px 0px";
+  button6.style.backgroundColor = "rgb(193, 182, 198)";
+  updateChartData(5);
+});
+
 //ボタンタップ後の処理
 button1.addEventListener("touchend", function () {
   button1.style.borderRadius = "";
@@ -109,6 +125,12 @@ button5.addEventListener("touchend", function () {
   button5.style.backgroundColor = "";
 });
 
+button6.addEventListener("touchend", function () {
+  button6.style.borderRadius = "";
+  button6.style.boxShadow = "";
+  button6.style.backgroundColor = "";
+});
+
 
 
 
@@ -130,12 +152,12 @@ function updateChartData(index) {
 }
 
 var lastTouchEnd = 0;
-document.addEventListener('touchend', function(event) {
-    var now = (new Date()).getTime();
-    if (now - lastTouchEnd <= 300) {
-        event.preventDefault();
-    }
-    lastTouchEnd = now;
+document.addEventListener("touchend", function (event) {
+  var now = new Date().getTime();
+  if (now - lastTouchEnd <= 300) {
+    event.preventDefault();
+  }
+  lastTouchEnd = now;
 });
 
 var today = new Date();
