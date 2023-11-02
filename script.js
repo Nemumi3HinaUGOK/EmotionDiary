@@ -6,7 +6,7 @@ var chartData = {
     {
       data: [0, 0, 0, 0, 0, 0], // 各項目の初期値
       backgroundColor: [
-        "#ffb2ff",
+        "#ffb2d8",
         "#ffb2b2",
         "#b2b2ff",
         "#ffd8b2",
@@ -36,6 +36,12 @@ var myEmoChart = new Chart(ctx, {
   type: "doughnut",
   data: chartData,
   options: {
+    plugins: {
+      legend: {
+        display: true,
+        position: "bottom",
+      },
+    },
     responsive: true,
   },
 });
@@ -132,7 +138,6 @@ button6.addEventListener("touchend", function () {
 });
 
 
-
 // チャートデータを更新する関数
 function updateChartData(index) {
   // 選択したボタンに対応するデータを1ずつ加算
@@ -152,7 +157,7 @@ function updateChartData(index) {
 var lastTouchEnd = 0;
 document.addEventListener("touchend", function (event) {
   var now = new Date().getTime();
-  if (now - lastTouchEnd <= 300) {
+  if (now - lastTouchEnd <= 1000) {
     event.preventDefault();
   }
   lastTouchEnd = now;
