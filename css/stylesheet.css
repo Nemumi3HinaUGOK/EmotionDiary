@@ -9,7 +9,7 @@ font-size: 60px;
       margin:0 auto;
     user-select: none;
     color: darkgreen;
-    background-color: rgb(242, 245, 234);
+    background-color: rgb(243, 244, 238);
   }
 
   canvas{
@@ -25,10 +25,38 @@ margin: auto;
     height: 130px;
     border-style: none;
     border-radius: 50%;
-    box-shadow: 0 5px 5px 0.5px;
-    color: rgb(105, 52, 155);
-    background-color:rgb(254, 250, 255);
+    box-shadow: 0 10px 10px 0.5px;
     font-size: 40px;
+  }
+
+  #button1{
+    color: #ff7abc;
+    background-color: #fff3ff;
+  }
+
+  #button2{
+    color: #ff7a7a;
+    background-color: #fff1f1;
+  }
+
+  #button3{
+    color:#7a7aff;
+    background-color: #f7f7ff;
+  }
+
+  #button4{
+    color:#ffaa55;
+    background-color: #fff6ee;
+  }
+
+  #button5{
+    color:#00984f;
+    background-color: #f1fffc;
+  }
+
+  #button6{
+    color:#bc7aff;
+    background-color: #f8f1ff;
   }
 
   header{
@@ -45,4 +73,4 @@ text-align: center;
           border-radius: 50%;
           box-shadow: 0 0px 0px;
           background-color: rgb(193, 182, 198);
-  } */
+  }  */
