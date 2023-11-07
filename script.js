@@ -157,7 +157,7 @@ function updateChartData(index) {
 var lastTouchEnd = 0;
 document.addEventListener("touchend", function (event) {
   var now = new Date().getTime();
-  if (now - lastTouchEnd <= 1000) {
+  if (now - lastTouchEnd <= 500) {
     event.preventDefault();
   }
   lastTouchEnd = now;
