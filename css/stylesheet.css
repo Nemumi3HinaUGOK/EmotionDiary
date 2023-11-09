@@ -5,7 +5,7 @@ font-size: 60px;
 
   body {
       width: 1080px;
-      height: 1920px;
+      height: 1420px;
       margin:0 auto;
     user-select: none;
     color: darkgreen;
@@ -28,6 +28,10 @@ margin: auto;
     box-shadow: 0 10px 10px 0.5px;
     font-size: 40px;
   }
+
+span{
+  padding: 50px;
+}
 
   #button1{
     color: #ff7abc;
@@ -58,6 +62,30 @@ margin: auto;
     color:#bc7aff;
     background-color: #f8f1ff;
   }
+
+    #count1 {
+      color: #ff7abc;
+    }
+  
+    #count2 {
+      color: #ff7a7a;
+    }
+  
+    #count3 {
+      color: #7a7aff;
+    }
+  
+    #count4 {
+      color: #ffaa55;
+    }
+  
+    #count5 {
+      color: #00984f;
+    }
+  
+    #count6 {
+      color: #bc7aff;
+    }
 
   header{
     font-size:40%;
